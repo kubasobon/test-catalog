@@ -3,7 +3,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
   name: kuba-hello-world
-  namespace: flux-system
+  namespace: giantswarm
 spec:
   imageRepositoryRef:
     name: kuba-hello-world

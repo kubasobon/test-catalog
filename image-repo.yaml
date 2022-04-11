@@ -3,7 +3,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
   name: kuba-hello-app
-  namespace: flux-system
+  namespace: giantswarm
 spec:
   image: giantswarmpublic.azurecr.io/hello-world-app
   interval: 1m0s
