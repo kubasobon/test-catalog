@@ -1,0 +1,12 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: test-catalog
+  namespace: giantswarm
+spec:
+  interval: 1m0s
+  ref:
+    branch: image-update-public
+  url: https://github.com/kubasobon/test-catalog
+
