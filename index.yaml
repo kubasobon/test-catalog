@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  hello-world-app:
+  - annotations:
+      application.giantswarm.io/team: honeybadger
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-03-31T13:24:47.995116679+02:00"
+    description: A chart that deploys a basic hello world site and lets you test values
+      merging of user values configmap and secrets.
+    digest: ae3749ba63bcf7813a1d52be0ce214913915a9969d76826bde1565ebe67524ae
+    home: https://github.com/giantswarm/hello-world-app
+    icon: https://s.giantswarm.io/app-icons/1/png/hello-world-app-light.png
+    keywords:
+    - hello-world
+    - demo
+    - webapp
+    maintainers:
+    - name: Giant Swarm - Honeybadger
+    name: hello-world-app
+    sources:
+    - https://github.com/giantswarm/hello-world-app
+    - https://github.com/giantswarm/helloworld
+    urls:
+    - oci://giantswarmpublic.azurecr.io/hello-world-app:0.2.1
+    version: 0.2.1
+generated: "2022-03-31T13:24:47.994524935+02:00"
