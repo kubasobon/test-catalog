@@ -1,0 +1,38 @@
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  annotations:
+    config.giantswarm.io/version: main
+  labels:
+    app-operator.giantswarm.io/version: 0.0.0
+    app.kubernetes.io/name: vault-exporter
+  name: hello-world-app
+  namespace: giantswarm
+spec:
+  catalog: kuba-test-catalog
+  config:
+    configMap:
+      name: vault-exporter-konfigure
+      namespace: giantswarm
+    secret:
+      name: vault-exporter-konfigure
+      namespace: giantswarm
+  install: {}
+  kubeConfig:
+    context:
+      name: ""
+    inCluster: true
+    secret:
+      name: ""
+      namespace: ""
+  name: hello-world-app
+  namespace: giantswarm
+  namespaceConfig: {}
+  userConfig:
+    configMap:
+      name: ""
+      namespace: ""
+    secret:
+      name: ""
+      namespace: ""
+  version: 0.2.1
