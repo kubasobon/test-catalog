@@ -38,4 +38,4 @@ spec:
         - {{.}}
         {{ end -}}
     push: # moved under `git`
-      branch: auto
+      branch: image-update-public
