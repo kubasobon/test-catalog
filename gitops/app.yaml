@@ -13,10 +13,10 @@ spec:
   config:
     configMap:
       name: vault-exporter-konfigure
-      namespace: flux-giantswarm
+      namespace: giantswarm
     secret:
       name: vault-exporter-konfigure
-      namespace: flux-giantswarm
+      namespace: giantswarm
   install: {}
   kubeConfig:
     context:
