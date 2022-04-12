@@ -35,4 +35,4 @@ spec:
     secret:
       name: ""
       namespace: ""
-  version: 0.2.1  # {"$imagepolicy": "flux-giantswarm:kuba-hello-world:tag"}
+  version: 0.3.0 # {"$imagepolicy": "flux-giantswarm:kuba-hello-world:tag"}
