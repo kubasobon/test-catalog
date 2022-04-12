@@ -6,7 +6,7 @@ metadata:
   namespace: giantswarm
 spec:
   interval: 10s
-  path: ./
+  path: ./gitops
   prune: true
   sourceRef:
     kind: GitRepository
