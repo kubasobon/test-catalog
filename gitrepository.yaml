@@ -9,4 +9,6 @@ spec:
   ref:
     branch: image-update-public
   url: https://github.com/kubasobon/test-catalog
+  secretRef:
+    name: kuba-access
 
