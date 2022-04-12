@@ -1,0 +1,38 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+spec:
+  sourceRef:
+    kind: GitRepository
+    name: test-catalog
+  interval: 5m
+  update:
+    strategy: Setters
+    path: ./gitops
+  git:
+    checkout:
+      ref:
+        branch: image-update-public
+    commit:
+      author:
+        name: fluxbot
+        email: fluxbot@example.com
+      messageTemplate: |
+        KUBA:Automated image update
+        Automation name: {{ .AutomationObject }}
+
+        Files:
+        {{ range $filename, $_ := .Updated.Files -}}
+        - {{ $filename }}
+        {{ end -}}
+
+        Objects:
+        {{ range $resource, $_ := .Updated.Objects -}}
+        - {{ $resource.Kind }} {{ $resource.Name }}
+        {{ end -}}
+
+        Images:
+        {{ range .Updated.Images -}}
+        - {{.}}
+        {{ end -}}
+    push: # moved under `git`
+      branch: auto
