@@ -4,7 +4,7 @@ metadata:
   labels:
     application.giantswarm.io/catalog-visibility: internal
   name: kuba-test-catalog
-  namespace: giantswarm
+  namespace: flux-giantswarm
 spec:
   description: kuba-test-catalog
   logoURL: "https://avatars.githubusercontent.com/u/4587658?v=4"

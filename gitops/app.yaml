@@ -7,16 +7,16 @@ metadata:
     app-operator.giantswarm.io/version: 0.0.0
     app.kubernetes.io/name: vault-exporter
   name: hello-world-app
-  namespace: giantswarm
+  namespace: flux-giantswarm
 spec:
   catalog: kuba-test-catalog
   config:
     configMap:
       name: vault-exporter-konfigure
-      namespace: giantswarm
+      namespace: flux-giantswarm
     secret:
       name: vault-exporter-konfigure
-      namespace: giantswarm
+      namespace: flux-giantswarm
   install: {}
   kubeConfig:
     context:
